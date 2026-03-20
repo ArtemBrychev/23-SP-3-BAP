@@ -2,19 +2,18 @@ version: '3.8'
 
 services:
   urlshortener:
-    build: .
-    container_name: urlshortener
+    image: vladlier/1-pka:latest
+    container_name: urlshortener2
     ports:
       - "8080:8080"
     depends_on:
-      postgres:
-          condition: service_healthy
+      - postgres
     env_file:
       - .env
 
   postgres:
     image: postgres:15
-    container_name: postgres
+    container_name: postgres2
     ports:
       - "5432:5432"
     environment:
@@ -23,14 +22,9 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}" ]
-      interval: 5s
-      timeout: 5s
-      retries: 10
   redis:
     image: redis:7.2-alpine
-    container_name: redis
+    container_name: redis2
     ports:
       - "6379:6379"
 
