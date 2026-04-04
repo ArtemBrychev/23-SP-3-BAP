@@ -5,46 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1f6b933-ec95-48f8-a8e1-3d6f3d80880c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.2026-02-25.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.2026-02-26.0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/configs/EnvConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/BaseException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/ExceptionType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/InvalidUrlException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exceptions/UrlNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/CachedRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/Repository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/entities/UrlEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/postgres/DataBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/postgres/DbRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/redis/RedisManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repositories/redis/RedisRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/services/Base62Codec.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/services/Service.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/services/UrlValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlets/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlets/NewServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlets/PingServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlets/RootServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CacheTests/CacheRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EnvConfigTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RedisTests/RedisManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RedisTests/RedisRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/serviecesTests/Base62CodecTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/serviecesTests/ServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/serviecesTests/UrlValidatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/servletsTests/NewServletTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sqlTests/DataBaseTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/sqlTests/DbRepositoryTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab2/img_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrlShortener-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/UrlShortener-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,10 +22,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="3BFFEfgw16mvTS6spvTNwgOnAkn" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -67,10 +35,18 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lab2" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,5 +63,8 @@
       <updated>1774076802157</updated>
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
