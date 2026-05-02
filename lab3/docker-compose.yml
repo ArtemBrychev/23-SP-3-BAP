@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  urlshortener:
+    build: .
+    container_name: urlshortener
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+          condition: service_healthy
+    env_file:
+      - .env
+
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  redis:
+    image: redis:7.2-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "15671:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - ./rabbitmq-main-data:/var/lib/rabbitmq
+
+
+
+
+
+
+
+  urlshortenerstat:
+    build: UrlShortenerStatistics/.
+    container_name: urlshortenerstat
+    ports:
+      - "9090:9090"
+    env_file:
+      - ./UrlShortenerStatistics/.env
+    depends_on:
+      - postgresstat
+
+  postgresstat:
+    image: postgres:15
+    container_name: statisticPostgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: ${DB_NAME_STAT}
+      POSTGRES_USER: ${DB_USER_STAT}
+      POSTGRES_PASSWORD: ${DB_PASSWORD_STAT}
+    volumes:
+      - postgres_stat_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+  postgres_stat_data:
+  rabbitmq-main-data:
+  rabbitmq-stat-data:
